@@ -1,11 +1,9 @@
 const Reset = '\x1b[0m';
 const FgYellow = '\x1b[33m';
 
-// Set the environment
 const APP_ENV = 'prod';
 let APP_HOST = '';
 
-// Choose API base URL
 switch (APP_ENV) {
   case 'local':
     console.log('🔗 Connecting to Local Backend');
@@ -14,7 +12,7 @@ switch (APP_ENV) {
 
   case 'prod':
     console.log('🌐 Connecting to Render Backend');
-    APP_HOST = 'https://socialconnect-backend.onrender.com';
+    APP_HOST = 'https://socialconnect-backend-cvjt.onrender.com';
     break;
 
   default:
@@ -23,7 +21,6 @@ switch (APP_ENV) {
     break;
 }
 
-// Display connection info
 console.log(FgYellow, `Environment: ${APP_ENV}`, Reset);
 console.log(FgYellow, `API Host: ${APP_HOST}`, Reset);
 
