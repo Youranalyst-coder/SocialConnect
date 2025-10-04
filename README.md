@@ -1,7 +1,7 @@
 # 🌐 SocialConnect – Real-Time Chat Application
 
 🚀 Live Demo: 
-🔗 Frontend: [https://socialconnect-frontend.vercel.app](https://socialconnect-frontend.vercel.app)  
+🔗 Frontend: [https://socialconnect-frontend.vercel.app](https://socialconnect-frontend.vercel.app/login)  
 ⚙️ Backend API:[https://socialconnect-backend-cvjt.onrender.com](https://socialconnect-backend-cvjt.onrender.com)
 
 
