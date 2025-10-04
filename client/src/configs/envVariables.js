@@ -1,25 +1,30 @@
 const Reset = '\x1b[0m';
 const FgYellow = '\x1b[33m';
 
-const APP_ENV = 'prod'
-let APP_HOST = 'local'
+// Set the environment
+const APP_ENV = 'prod';
+let APP_HOST = '';
 
+// Choose API base URL
 switch (APP_ENV) {
-    case 'local':
-        console.log('connecting to local')
-        APP_HOST = 'http://localhost:5000'
-        break;
-    case 'prod':
-        console.log('connecting to prod')
-        APP_HOST = 'https://chatsapp-iu36.onrender.com'
-        break;
-    default:
-        console.log('connecting to default api (local)')
-        APP_HOST = 'http://localhost:5000'
-        break;
+  case 'local':
+    console.log('🔗 Connecting to Local Backend');
+    APP_HOST = 'http://localhost:5000';
+    break;
+
+  case 'prod':
+    console.log('🌐 Connecting to Render Backend');
+    APP_HOST = 'https://socialconnect-backend.onrender.com';
+    break;
+
+  default:
+    console.log('⚙️ Connecting to Default (Local)');
+    APP_HOST = 'http://localhost:5000';
+    break;
 }
 
-console.log(FgYellow, APP_ENV, Reset)
-console.log(FgYellow, APP_HOST, Reset)
+// Display connection info
+console.log(FgYellow, `Environment: ${APP_ENV}`, Reset);
+console.log(FgYellow, `API Host: ${APP_HOST}`, Reset);
 
 export default APP_HOST;
